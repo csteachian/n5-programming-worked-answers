@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>N5 Worked Answers</title>
+  <meta name="description" content="National 5 Software Design and Development: programming practice questions with worked answers, mark breakdowns and try-it activities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/revision.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <span class="brand-tag">National 5 · Software Design &amp; Development</span>
+        <h1>Worked Answers</h1>
+      </div>
+      <div class="progress" aria-live="polite">
+        <span class="progress-count" id="score">0 / 0</span>
+        <span class="progress-label">marks</span>
+        <div class="progress-bar" aria-hidden="true"><span id="score-fill"></span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="tasks" aria-label="Questions">
+      <details id="q-menu" open>
+        <summary>Questions</summary>
+        <ol class="task-list" id="q-list"></ol>
+      </details>
+      <details class="key" open>
+        <summary>How to use this page</summary>
+        <ol class="how">
+          <li>Have a go at the question in the box.</li>
+          <li>Press <strong>Show answer</strong>.</li>
+          <li>Tick each mark you earned, to be honest with yourself.</li>
+          <li>Read <em>Why</em> and <em>Watch out</em>, then use <strong>Try it</strong> to test your understanding.</li>
+        </ol>
+      </details>
+      <details class="key">
+        <summary>Command words</summary>
+        <dl class="cmd-list">
+          <dt>State / Identify</dt>
+          <dd>Give a short answer: a word or phrase. No explanation needed.</dd>
+          <dt>Describe</dt>
+          <dd>Say what happens or what something is like, in a sentence.</dd>
+          <dt>Explain</dt>
+          <dd>Give a reason: say <em>why</em> or <em>how</em>.</dd>
+          <dt>Write the code</dt>
+          <dd>Any language is fine: SQA Reference Language, Python or another. The logic must be correct.</dd>
+        </dl>
+      </details>
+    </nav>
+
+    <main class="sheet" id="sheet">
+      <div class="toolbar">
+        <div class="lang" role="group" aria-label="Show code answers in">
+          <span class="lang-label">Code answers in</span>
+          <button type="button" class="lang-btn" data-lang="ref" aria-pressed="true">Reference Language</button>
+          <button type="button" class="lang-btn" data-lang="py" aria-pressed="false">Python</button>
+        </div>
+        <div class="toolbar-actions">
+          <button type="button" class="btn btn-small" id="reveal-all">Show all answers</button>
+          <button type="button" class="btn btn-small btn-quiet" id="reset">Start again</button>
+        </div>
+      </div>
+      <div id="questions"></div>
+    </main>
+  </div>
+
+  <footer class="foot">
+    Code is written in SQA Reference Language and Python. Your answers and marks are saved in this browser only.
+  </footer>
+
+  <script src="js/flowchart.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/revision.js"></script>
+</body>
+</html>
